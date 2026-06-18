@@ -7,10 +7,95 @@
     <link rel="stylesheet" href="semanstyle.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <!-- En-tête de la page -->
+      <h1>Mini-ProjetS2</h1>
+      <!-- Navigation Menu-->
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenu de la page -->
+    <main>
+      <!-- Section À propos de moi-->
+      <section>
+        <h2>À propos de moi</h2>
 
-    <main></main>
+        <p>
+          Bonjour ! Je m'appelle Ben Salem Kongolo. Je suis passionné par le
+          développement web et actuellement en formation Full Stack. <br />
+          J'aime apprendre de nouvelles technologies et créer des interfaces
+          accessibles, simples et bien structurées.<br />
+          Mon intérêt pour le UI/UX me pousse à concevoir des expériences
+          utilisateur claires, intuitives et efficaces.
+        </p>
+      </section>
+      <!-- Section Mes compétences -->
+      <section>
+        <h2>Mes compétences</h2>
 
-    <footer></footer>
+        <article>
+          <h3>Développement Web</h3>
+
+          <p>
+            Je maîtrise les bases du HTML5, du CSS3 et je continue à apprendre
+            JavaScript ainsi que le développement Full Stack.
+          </p>
+        </article>
+
+        <aside>
+          <h3>Objectif</h3>
+
+          <p>
+            Mon objectif est de devenir développeur Full Stack et de participer
+            à des projets innovants.
+          </p>
+        </aside>
+      </section>
+      
+      <!-- Section Me contacter -->
+      <section>
+        <h2>Me contacter</h2>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Informations personnelles</legend>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required />
+            <!-- Sélection du pays -->
+            <label for="pays">Pays</label>
+            <select id="pays" name="pays">
+              <option value="">Choisissez votre pays</option>
+              <option value="rdc">RDC</option>
+              <option value="france">France</option>
+              <option value="japon">Japon</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Votre message</legend>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </fieldset>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Mon Profil Personnel</p>
+
+      <p>Développé dans le cadre d’un mini-projet HTML5 sémantique.</p>
+    </footer>
   </body>
 </html>
